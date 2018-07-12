@@ -26,10 +26,13 @@ class Ioc
      * @param $className
      * @param $methodName
      * @param array $params
+     * @param array $instanceParams
+     * @return mixed
+     * @throws \ReflectionException
      */
-    public static function make($className, $methodName, $params = [])
+    public static function make($className, $methodName, $params = [], $instanceParams = [])
     {
-        $instance = self::getInstance($className);
+        $instance = self::getInstance($className, $instanceParams);
         $paramArr = self::getMethodParams($className, $methodName);
         return $instance->{$methodName}(...array_merge($paramArr, $params));
     }
