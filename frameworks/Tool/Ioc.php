@@ -11,13 +11,14 @@ class Ioc
     /**
      * 获取类的对象实例
      * @param $className
+     * @param array $params
      * @return object
      * @throws \ReflectionException
      */
-    public static function getInstance($className)
+    public static function getInstance($className, $params = [])
     {
         $paramArr = self::getMethodParams($className);
-        return (new \ReflectionClass($className))->newInstanceArgs($paramArr);
+        return (new \ReflectionClass($className))->newInstanceArgs(...array_merge($paramArr, $params));
     }
 
     /**
