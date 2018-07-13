@@ -17,7 +17,7 @@ class CurlTool
     public static function httpPost($url, $data_string=null) {
 
         $ssl = false;
-        if (str_start($url, 'https')) {
+        if (starts_with($url, 'https')) {
             $ssl = 2;
         }
 
@@ -80,7 +80,7 @@ class CurlTool
      */
     public static function httpGet($url, $data_string=null) {
         $ssl = false;
-        if (str_start($url, 'https')) {
+        if (starts_with($url, 'https')) {
             $ssl = 2;
         }
         $curl = curl_init();

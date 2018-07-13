@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0740ba07802b8511fa78d1d40c987fcc",
+    "content-hash": "34902008db1aa197e2e252d6ddc9bbda",
     "packages": [
         {
             "name": "barryvdh/laravel-ide-helper",
@@ -16,7 +16,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/barryvdh/laravel-ide-helper/5c304db44fba8e9c4aa0c09739e59f7be7736fdd.zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/5c304db44fba8e9c4aa0c09739e59f7be7736fdd",
                 "reference": "5c304db44fba8e9c4aa0c09739e59f7be7736fdd",
                 "shasum": ""
             },
@@ -89,7 +89,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/barryvdh/ReflectionDocBlock/3dcbd98b5d9384a5357266efba8fd29884458e5c.zip",
+                "url": "https://api.github.com/repos/barryvdh/ReflectionDocBlock/zipball/3dcbd98b5d9384a5357266efba8fd29884458e5c",
                 "reference": "3dcbd98b5d9384a5357266efba8fd29884458e5c",
                 "shasum": ""
             },
@@ -138,7 +138,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/dingo/api/46cffad61942caa094dd876155e503b6819c5095.zip",
+                "url": "https://api.github.com/repos/dingo/api/zipball/46cffad61942caa094dd876155e503b6819c5095",
                 "reference": "46cffad61942caa094dd876155e503b6819c5095",
                 "shasum": ""
             },
@@ -212,7 +212,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/dingo/blueprint/1dc93b8ea443fbbdaaca0582572ee6ca53afccfd.zip",
+                "url": "https://api.github.com/repos/dingo/blueprint/zipball/1dc93b8ea443fbbdaaca0582572ee6ca53afccfd",
                 "reference": "1dc93b8ea443fbbdaaca0582572ee6ca53afccfd",
                 "shasum": ""
             },
@@ -301,7 +301,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/doctrine/annotations/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5.zip",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
                 "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
                 "shasum": ""
             },
@@ -1018,7 +1018,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/thephpleague/fractal/a0b350824f22fc2fdde2500ce9d6851a3f275b0e.zip",
+                "url": "https://api.github.com/repos/thephpleague/fractal/zipball/a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
                 "reference": "a0b350824f22fc2fdde2500ce9d6851a3f275b0e",
                 "shasum": ""
             },
@@ -1082,7 +1082,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/Maatwebsite/Laravel-Excel/c450078854ad7a9441089e8131092a691b92a6aa.zip",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/c450078854ad7a9441089e8131092a691b92a6aa",
                 "reference": "c450078854ad7a9441089e8131092a691b92a6aa",
                 "shasum": ""
             },
@@ -1468,7 +1468,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/phpDocumentor/ReflectionDocBlock/bf329f6c1aadea3299f08ee804682b7c45b326a2.zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/bf329f6c1aadea3299f08ee804682b7c45b326a2",
                 "reference": "bf329f6c1aadea3299f08ee804682b7c45b326a2",
                 "shasum": ""
             },
@@ -1560,7 +1560,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/PHPOffice/PhpSpreadsheet/2eb342c13da50211fdfea73b513647e22a87e78f.zip",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/2eb342c13da50211fdfea73b513647e22a87e78f",
                 "reference": "2eb342c13da50211fdfea73b513647e22a87e78f",
                 "shasum": ""
             },
@@ -1635,6 +1635,56 @@
                 "xlsx"
             ],
             "time": "2018-06-10T06:44:19+00:00"
+        },
+        {
+            "name": "predis/predis",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "reference": "f0210e38881631afeafb56ab43405a92cafd9fd1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-06-16T16:22:20+00:00"
         },
         {
             "name": "psr/container",
@@ -1997,7 +2047,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/class-loader/e63c12699822bb3b667e7216ba07fbcc3a3e203e.zip",
+                "url": "https://api.github.com/repos/symfony/class-loader/zipball/e63c12699822bb3b667e7216ba07fbcc3a3e203e",
                 "reference": "e63c12699822bb3b667e7216ba07fbcc3a3e203e",
                 "shasum": ""
             },
@@ -2122,7 +2172,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/css-selector/03ac71606ecb0b0ce792faa17d74cc32c2949ef4.zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/03ac71606ecb0b0ce792faa17d74cc32c2949ef4",
                 "reference": "03ac71606ecb0b0ce792faa17d74cc32c2949ef4",
                 "shasum": ""
             },
@@ -2231,7 +2281,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/event-dispatcher/2391ed210a239868e7256eb6921b1bd83f3087b5.zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/2391ed210a239868e7256eb6921b1bd83f3087b5",
                 "reference": "2391ed210a239868e7256eb6921b1bd83f3087b5",
                 "shasum": ""
             },
@@ -2786,7 +2836,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/symfony/translation/16328f5b217cebc8dd4adfe4aeeaa8c377581f5a.zip",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/16328f5b217cebc8dd4adfe4aeeaa8c377581f5a",
                 "reference": "16328f5b217cebc8dd4adfe4aeeaa8c377581f5a",
                 "shasum": ""
             },
