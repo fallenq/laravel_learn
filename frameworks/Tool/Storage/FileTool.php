@@ -12,5 +12,4 @@ use Frameworks\Tool\Storage\Nozzle\BaseFileNozzle;
 class FileTool implements BaseFileNozzle
 {
     use BaseFileExtend;
-
 }
