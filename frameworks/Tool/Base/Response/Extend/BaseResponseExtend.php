@@ -6,6 +6,8 @@
  */
 namespace Frameworks\Tool\Base\Response\Extend;
 
+use Frameworks\Tool\Base\Response\ResponseConfig;
+
 trait BaseResponseExtend
 {
     protected $code = 0;
@@ -48,6 +50,9 @@ trait BaseResponseExtend
 
     public function toJsonp($callback = "callback")
     {
+        if (empty(ResponseConfig::ALLOW_USE_JSONP)) {
+            return '';
+        }
         $outJson = $this->toJson();
         if (empty($callback)) {
             return $outJson;
