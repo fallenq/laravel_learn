@@ -1,6 +1,7 @@
 <?php
 namespace Frameworks\Designer\Interpreter;
 
+// TODO: 重点理解
 class UserCDInterpreter
 {
     protected $_user = null;
