@@ -19,6 +19,9 @@ use Frameworks\Designer\Mediator\MusicContainerMediator;
 use Frameworks\Designer\Mixtape\MixtapeCD;
 use Frameworks\Designer\Observer\BuyCDNotifyStreamObserver;
 use Frameworks\Designer\Proxy\DallasNOCCDProxy;
+use Frameworks\Designer\Strategy\CDAsJSONStrategy;
+use Frameworks\Designer\Strategy\CDAsXMLStrategy;
+use Frameworks\Designer\Strategy\CDusesStrategy;
 use Frameworks\Tool\Base\Response\BaseResponse;
 use Frameworks\Tool\Ioc;
 use Frameworks\Tool\Storage\FileTool;
@@ -134,11 +137,18 @@ class IndexController extends Controller
 //            $cd->buy();
 //        }
         // TODO: 策略模式
-        $externalBand = 'Never Again';
-        $externalTitle = 'Waste of a Rib';
-
-        $cd = new \Frameworks\Designer\Strategy\CD($externalTitle, $externalBand);
-        print $cd->getAsXML();
+//        $externalBand = 'Never Again';
+//        $externalTitle = 'Waste of a Rib';
+//
+////        $cd = new \Frameworks\Designer\Strategy\CD($externalTitle, $externalBand);
+////        print $cd->getAsXML();
+//        $cd = new CDusesStrategy($externalTitle, $externalBand);
+//        // xml output
+//        $cd->setStrategyContext(new CDAsXMLStrategy());
+//        print $cd->get();
+//        // json output
+//        $cd->setStrategyContext(new CDAsJSONStrategy());
+//        print $cd->get();
         exit();
     }
 }
