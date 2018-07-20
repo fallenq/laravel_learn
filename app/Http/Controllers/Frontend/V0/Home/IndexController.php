@@ -133,6 +133,12 @@ class IndexController extends Controller
 //            $cd = new \Frameworks\Designer\Single\CD($boughtCD['title'], $boughtCD['band']);
 //            $cd->buy();
 //        }
+        // TODO: 策略模式
+        $externalBand = 'Never Again';
+        $externalTitle = 'Waste of a Rib';
+
+        $cd = new \Frameworks\Designer\Strategy\CD($externalTitle, $externalBand);
+        print $cd->getAsXML();
         exit();
     }
 }
