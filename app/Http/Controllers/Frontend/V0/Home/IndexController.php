@@ -15,6 +15,10 @@ use Frameworks\Designer\Factory\CDFactory;
 use Frameworks\Designer\Interpreter\User;
 use Frameworks\Designer\Interpreter\UserCDInterpreter;
 use Frameworks\Designer\Iterator\CDSearchByBandIterator;
+use Frameworks\Designer\Mediator\MusicContainerMediator;
+use Frameworks\Designer\Mixtape\MixtapeCD;
+use Frameworks\Designer\Observer\BuyCDNotifyStreamObserver;
+use Frameworks\Designer\Proxy\DallasNOCCDProxy;
 use Frameworks\Tool\Base\Response\BaseResponse;
 use Frameworks\Tool\Ioc;
 use Frameworks\Tool\Storage\FileTool;
@@ -89,8 +93,46 @@ class IndexController extends Controller
 //            print "<tr><td>{$cd->band}</td><td>{$cd->title}</td><td>".count($cd->trackList)."</td></tr>";
 //        }
 //        print '</table>';
-        // TODO: 中介者模式
-
+        // TODO: 中介者模式 (無直接聯係的進行關聯操作)
+//        $titleFromDB = 'Waste of a Rib';
+//        $bandFromDB = 'Never Again';
+//        $mediator = new MusicContainerMediator();
+//        $cd = new \Frameworks\Designer\Mediator\CD($mediator);
+//        $cd->title = $titleFromDB;
+//        $cd->band = $bandFromDB;
+//        $cd->changeBandName('Maybe Once More');
+        // TODO: 观察者模式 (好好研究)
+//        $title = 'Waste of a Rib';
+//        $band = 'Never Again';
+//        $cd = new \Frameworks\Designer\Observer\CD($title, $band);
+//        $observer = new BuyCDNotifyStreamObserver();
+//        $cd->attachObserver('purchased', $observer);
+//        $cd->buy();
+        // TODO: 原型模式
+//        $externalPurchaseInfoBandID = 12;
+//        $bandMixProto = new MixtapeCD($externalPurchaseInfoBandID);
+//        $externalPurchaseInfo = [];
+//        $externalPurchaseInfo[] = ['brrr', 'goodbye'];
+//        $externalPurchaseInfo[] = ['What it means', 'brrr'];
+//        foreach ($externalPurchaseInfo as $mixed) {
+//            $cd = clone $bandMixProto;
+//            $cd->trackList = $mixed;
+//            $cd->buy();
+//        }
+        // TODO: 代理模式 (简单继承覆盖)
+//        $externalTitle = 'Waste of a Rib';
+//        $externalBand = 'Never Again';
+////        $cd = new \Frameworks\Designer\Proxy\CD($externalTitle, $externalBand);
+//        $cd = new DallasNOCCDProxy($externalTitle, $externalBand);
+//        $cd->buy();
+        // TODO: 单元素模式
+//        $boughtCDs = [];
+//        $boughtCDs[] = ['band'=>'Never Again', 'title'=>'Waste of a Rib'];
+//        $boughtCDs[] = ['band'=>'Therapee', 'title'=>'Long Road'];
+//        foreach ($boughtCDs as $boughtCD) {
+//            $cd = new \Frameworks\Designer\Single\CD($boughtCD['title'], $boughtCD['band']);
+//            $cd->buy();
+//        }
         exit();
     }
 }
