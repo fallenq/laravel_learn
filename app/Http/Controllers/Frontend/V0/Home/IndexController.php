@@ -22,6 +22,7 @@ use Frameworks\Designer\Proxy\DallasNOCCDProxy;
 use Frameworks\Designer\Strategy\CDAsJSONStrategy;
 use Frameworks\Designer\Strategy\CDAsXMLStrategy;
 use Frameworks\Designer\Strategy\CDusesStrategy;
+use Frameworks\Designer\Template\BandEndorseCaseOfCereal;
 use Frameworks\Tool\Base\Response\BaseResponse;
 use Frameworks\Tool\Ioc;
 use Frameworks\Tool\Storage\FileTool;
@@ -149,6 +150,17 @@ class IndexController extends Controller
 //        // json output
 //        $cd->setStrategyContext(new CDAsJSONStrategy());
 //        print $cd->get();
+        // TODO: 模板模式 (重点研究)
+//        $externalTitle = "Waste of a Rib";
+//        $externalBand = "Never Again";
+//        $externalCDPrice = 12.99;
+//        $externalCerealPrice = 90;
+//        $cd = new \Frameworks\Designer\Template\CD($externalBand, $externalTitle, $externalCDPrice);
+//        $cd->setPriceAdjustments();
+//        print 'The total cost for CD item is:$'.$cd->price.'<br/>';
+//        $cereal = new BandEndorseCaseOfCereal($externalBand, $externalCerealPrice);
+//        $cereal->setPriceAdjustments();
+//        print 'The total cost for the Cereal case is $'.$cereal->price.'<br/>';
         exit();
     }
 }
