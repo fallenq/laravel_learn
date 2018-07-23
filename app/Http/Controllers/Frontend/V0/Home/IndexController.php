@@ -19,6 +19,8 @@ use Frameworks\Designer\Mediator\MusicContainerMediator;
 use Frameworks\Designer\Mixtape\MixtapeCD;
 use Frameworks\Designer\Observer\BuyCDNotifyStreamObserver;
 use Frameworks\Designer\Proxy\DallasNOCCDProxy;
+use Frameworks\Designer\Purchase\CDVisitorLogPurchase;
+use Frameworks\Designer\Purchase\CDVisitorPopulateDiscountList;
 use Frameworks\Designer\Strategy\CDAsJSONStrategy;
 use Frameworks\Designer\Strategy\CDAsXMLStrategy;
 use Frameworks\Designer\Strategy\CDusesStrategy;
@@ -161,6 +163,14 @@ class IndexController extends Controller
 //        $cereal = new BandEndorseCaseOfCereal($externalBand, $externalCerealPrice);
 //        $cereal->setPriceAdjustments();
 //        print 'The total cost for the Cereal case is $'.$cereal->price.'<br/>';
+        // TODO: 访问者模式
+//        $externalBand = 'Never Again';
+//        $externalTitle = 'Waste of a Rib';
+//        $externalPrice = 9.99;
+//        $cd = new \Frameworks\Designer\Purchase\CD($externalBand, $externalTitle, $externalPrice);
+//        $cd->buy();
+//        $cd->acceptVisitor(new CDVisitorLogPurchase());
+//        $cd->acceptVisitor(new CDVisitorPopulateDiscountList());
         exit();
     }
 }
